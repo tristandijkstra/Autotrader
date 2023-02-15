@@ -1,0 +1,2 @@
+# Autotrader
+Algorithmic Trading bot
