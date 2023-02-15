@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  cbot:
+    build:
+      context: .
+      args:
+        - GITHUB="True"
+        - BINANCEKEY="${BINANCEKEYS}"
+    volumes:
+      - logData:/bot/logData
+      - logs:/bot/logs
+      - storedData:/bot/storedData
+      - marketData:/bot/marketData
+volumes:
+  logs:
+  logData:
+  storedData:
+  marketData:
